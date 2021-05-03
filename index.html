@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/owfont-regular.css">
+    <link rel="stylesheet" href="styles/style.css">
+    
+    <title>RPI_2</title>
+</head>
+<body>
+
+    <time id="time"></time>
+    <time id="date"></time>
+    <h1>
+        <span id="greeting"></span>
+        <span id="name" contenteditable="true" onclick="clearName()"></span>
+    </h1>
+
+    <h2>What Is Your Focus For Today?</h2>
+    <h2 id="focus" contenteditable="true" onclick="clearFocus()"></h2>
+
+    <div class="quote_block">
+        <button class="btn"></button>
+        <figure class="quote">
+            <blockquote></blockquote>
+            <figcaption> </figcaption>
+        </figure>
+    </div>
+
+    <div class="weather_block">
+        <div class="city" contenteditable="true">Минск</div>
+        <div class="content">
+            <i class="weather-icon owf"></i>
+            <div class="temperature"></div>
+        </div>
+        <div class="weather-description"></div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
